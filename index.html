@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Xiaomi Paksitan</title>
+  </head>
+  <body>
+    <section>
+      <div class="text-center flex flex-col items-center py-4">
+        <img
+          class="max-w-[120px] py-2"
+          src="data:image/png;base64,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"
+          alt=""
+        />
+        <h1 class="text-4xl font-bold">Xioami Pakistan</h1>
+
+        <div class="max-w-[1320px] mx-auto flex flex-wrap items-center justify-center gap-10">
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+          <div class="max-w-1/4">
+            <img
+              src="https://i02.appmifile.com/317_operatorx_operatorx_opx/27/09/2024/92527a4b47c614055b11887e47aefe1c.png?thumb=1&w=200&q=85"
+              alt=""
+              class="mb-2"
+            />
+            <p>Xiaomi 15 Powered by Xiaomi HyperOS</p>
+            <h3 class="text-xl font-bold text-red-500">Rs. 40,000</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
